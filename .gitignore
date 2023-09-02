@@ -3,3 +3,4 @@ SynthData/
 __pycache__/
 runs/
 EEGData/
+MNE-eegbci-data/

@@ -4,3 +4,4 @@ __pycache__/
 runs/
 EEGData/
 MNE-eegbci-data/
+wandb/

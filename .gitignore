@@ -5,3 +5,4 @@ runs/
 EEGData/
 MNE-eegbci-data/
 wandb/
+.ENV

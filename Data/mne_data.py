@@ -17,9 +17,9 @@ def download_EEGBCI(subject=0, runs=[1], path='/', verbose=False):
         Whether to print out all the details or not
     """
     if type(subject) == int:
-        mne.datasets.eegbci.load_data(subject, runs, path, verbose=verbose)   
+        mne.datasets.eegbci.load_data(subject, runs, path, verbose=verbose, update_path=False)
     elif type(subject) == list:
         for sub in subject:
-            mne.datasets.eegbci.load_data(sub, runs, path, verbose=verbose)
+            mne.datasets.eegbci.load_data(sub, runs, path, verbose=verbose, update_path=False)
     
     print("Data downloaded!")

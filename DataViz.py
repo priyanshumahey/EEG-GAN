@@ -48,6 +48,9 @@ def plot_psd():
 def plot_psd_3ch():
     raw_3ch.plot_psd()
 
+def topomap():
+    raw.plot_psd_topomap(ch_type='eeg', normalize=True)
+
 root = tk.Tk()
 
 choose_file_button = tk.Button(root, text="Choose Data File", command=choose_file)
@@ -73,6 +76,10 @@ plot_psd_button.pack()
 
 plot_psd_3ch_button = tk.Button(root, text="Plot PSD 3 Channels", command=plot_psd_3ch)
 plot_psd_3ch_button.pack()
+
+topomap_button = tk.Button(root, text="Plot Topomap", command=topomap)
+topomap_button.pack()
+
 
 
 root.mainloop()
